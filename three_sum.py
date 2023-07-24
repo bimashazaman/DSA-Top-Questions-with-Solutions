@@ -29,7 +29,8 @@ def threeNumberSum1(array, targetSum):
                 left += 1
             # If the current sum is greater than the target sum, move the right pointer one step to the left to decrease the sum
             elif currentSum > targetSum:
-                right -= 1      
+                right -= 1   
+                   
     # Return the list of triplets
     return triplets
 
