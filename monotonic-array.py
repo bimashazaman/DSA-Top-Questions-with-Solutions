@@ -41,3 +41,18 @@ def isMonotonic(array):
     # If we have gone through the entire array without returning False,
     # that means the array is monotonic, and we return True
     return True
+
+
+
+def isMonotonic2(array):
+    isNonI = True
+    isNonD = True
+
+    for i in range(1, len(array)):
+        if array[i] < array[i - 1]:
+            isNonD = False
+        if array[i] > array[i - 1]:
+            isNonI = False  
+
+    return isNonD or isNonI
+
